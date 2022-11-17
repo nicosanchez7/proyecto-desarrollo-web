@@ -1,0 +1,154 @@
+/* reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Serif Pro', serif;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(137,80,222,1) 27%, rgba(0,212,255,1) 78%);
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+/* estilos del nav */
+
+.navbar-brand{
+    font-size: small;
+}
+
+.otros-html{
+    font-size: larger;
+    color: rgb(12, 12, 12);
+    font-family: 'Source Serif Pro', serif;
+}
+
+header nav ul li:hover{
+    transform: scale(0.9);
+    text-shadow: 1px 1px 1px black;
+}
+
+
+/* estilos del footer */
+
+footer{
+    display: grid;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 50px;
+}
+
+.derechos{
+    font-size: medium;
+}
+
+
+
+/* estilos del home */
+
+.body-home{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+.main-index{
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(2px 2px 4px black);
+}
+
+
+/* estilos de watercolor */
+
+.watercolor-main-title{
+    font-size: xx-large;
+    text-align: center;
+}
+
+/* estilos de principal style */
+
+.principal-style-main-title{
+    font-size: xx-large;
+    text-align: center;
+}
+
+/* estilos de about me */
+
+.main-about-me{
+    padding-bottom: 35px;
+    text-align: center;
+    
+}
+
+.title-about-me{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: xx-large;
+}
+
+.dibujo-conejo{
+    padding-bottom: 35px;
+}
+
+
+/* estilos de contact */
+
+.body-contact{
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "main section"
+        "footer footer";
+}
+
+.container-1{
+    display: grid;
+    grid-area: section;
+}
+
+.container-1 h2{
+    font-size: large;
+}
+
+.parrafo{
+    text-align: center;
+    font-size: large;
+}
+
+.formulario{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+
+/* MQ */
+
+@media screen and (max-width:768px){
+    .container-1{
+        display: none;
+    }
+}
